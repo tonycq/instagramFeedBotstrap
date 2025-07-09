@@ -18,29 +18,37 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create New Post
                 </button>
-                <div class="modal" tabindex="-1">
+                <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
 
                     <div class="modal-dialog">
                         <section class="modal-content">
                             <header class="modal-header">
 
                                 <h5 class="modal-title">Create a New Post</h5>
+                                <hr class="modal-divider">
+
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                 </button>
                             </header>
+                            <hr class="modal-divider">
+                            <p><strong>Caption:</strong> </p>
                             <section class="modal-body">
                                 <p>Add the caption of your post here</p>
+
                             </section>
                             <footer class="modal-footer">
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-solid fa-location-dot"></i>
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Publish</button>
                             </footer>
                         </section>
                     </div>
-                </div>
+                </section>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -70,19 +78,48 @@
             </div>
         </nav>
     </header>
-    <section class="container">
+    <menu class="container  ">
+<section class="container-fluid col">
+    
+        <section class="row w-25 h-50">
+            <img src="img\architecture.jpg" alt="">
+        </section>
 
-    </section>
+        <section class="class row w-25 h-500">
+            <img src="img\dog.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\fashion.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\studying.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\snow.jpg" alt="">
+        </section>
+        
+        <section class="class row w-25 h-50">
+            <img src="img\reading.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\pedaling.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\geek.jpg" alt="">
+        </section>
 
+        <section class="class row w-25 h-50">
+            <img src="img\view.jpg" alt="">
+        </section>
+</section>
+    </menu>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
