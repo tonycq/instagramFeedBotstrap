@@ -2,126 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Instagram feed with Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Instagram feed with Bootstrap</title>
 
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+  <header class="container-fluid w-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid ">
+        <!-- Logo -->
+        <a class="navbar-brand" href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+
+        <!-- Botón del menú hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenedor colapsable -->
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="d-flex justify-content-end w-100">
+            <!-- Botón Create Post alineado a la izquierda -->
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Create New Post
+                  Create New Post
                 </button>
-                <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+              </li>
+            </ul>
 
-                    <div class="modal-dialog">
-                        <section class="modal-content">
-                            <header class="modal-header">
+            <!-- Icono de engranaje alineado a la derecha -->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
 
-                                <h5 class="modal-title">Create a New Post</h5>
-                                <hr class="modal-divider">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </header>
-                            <hr class="modal-divider">
-                            <p><strong>Caption:</strong> </p>
-                            <section class="modal-body">
-                                <p>Add the caption of your post here</p>
 
-                            </section>
-                            <footer class="modal-footer">
-                                <i class="fa-solid fa-camera"></i>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Publish</button>
-                            </footer>
-                        </section>
-                    </div>
-                </section>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <menu class="container">
+    <div class="contaniner row ">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+        <div class="border rounded p-2 text-dark min-vh-50">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <h5 class="mb-0">Card Title</h5><small>01/10 <i class="fa-solid fa-eye"></i></small>
+          </div>
+          <div class="container ratio ratio-4x3 mb-2 ">
+            <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" src="img/architecture.jpg"
+              alt="picture">
+          </div>
+          <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2"></i>
+            <p class="mb-0">204 Likes</p>
+          </div>
+          <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </article>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Log out</a></li>
-                            </ul>
-                        </li>
 
-                </div>
+
+  </menu>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-2">
+        <header class="modal-header ps-0">
+          <h4 class="modal-title ">Create a New Post</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </header>
+
+        <section class="body-modal  ">
+          <p><strong>Caption:</strong> </p>
+          <section class="form-floating ">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Add the caption of your post here</label>
+          </section>
+          <div class="icons d-flex my-2 ">
+            <div class="p-2  ">
+              <i class="fa-solid fa-camera"></i>
             </div>
-        </nav>
-    </header>
-    <menu class="container  ">
-<section class="container-fluid col">
-    
-        <section class="row w-25 h-50">
-            <img src="img\architecture.jpg" alt="">
+            <div class="p-2 ">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
         </section>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Publish</button>
+        </footer>
+      </div>
+    </div>
+  </div>
 
-        <section class="class row w-25 h-500">
-            <img src="img\dog.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\fashion.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\studying.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\snow.jpg" alt="">
-        </section>
-        
-        <section class="class row w-25 h-50">
-            <img src="img\reading.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\pedaling.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\geek.jpg" alt="">
-        </section>
-
-        <section class="class row w-25 h-50">
-            <img src="img\view.jpg" alt="">
-        </section>
-</section>
-    </menu>
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
