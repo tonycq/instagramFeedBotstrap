@@ -1,18 +1,21 @@
 # 🌟 Proyecto: Instagram Feed With Bootstrap
 
-<img src="..." alt="Grid Bootstrap" width="350" height="560" />
+
 
 ## 📝 Descripción
 
-Este proyecto es un **Grid de Instagram** creado como práctica, donde se desarrolla una **Grid** utilizando **HTML** y **Bootstrap** 
+Este proyecto es una práctica con  **Bootstrap 5.3** donde se recrea **Una Feed al estilo de Instagram** utilizando diferentes componentes del framework como **Navbar** **dropdown** **Modal** mas iconos de font awesome para crear una interfaz visualmente.  atractiva.
 
 ## 🛠️ Tecnologías utilizadas
 
 - 🎨 **HTML5**
 - 📦 **Bootstrap** como propiedad principal para distribuir los elementos
 - 💡 **Iconos de Font Awesome** importados vía CDN
-- 🔤 **Fuente de Google Fonts**
-- - 🚧 🚧 🚧 🚧 🚧  Aún en construcción 🚧 🚧 🚧 🚧 🚧...
+
+## 📷 Vista previa del proyecto
+
+
+![Demo del proyecto](img/BoostrapGif.gif)
 ---
 
 

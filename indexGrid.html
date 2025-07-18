@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,247 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <title>Boostrap Grid</title>
+    <title>Instagram feed with Bootstrap Grid </title>
+
 </head>
+
 <body>
+    <header class="w-100 ">
+        <nav class="navbar navbar-expand-lg text-white " style="background: #3f0d57;">
+            <div class="container-fluid ">
+                <!-- Logo -->
+                <a class="navbar-brand text-white" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram text-white"></i> Instagram
+                </a>
+
+                <!-- Botón del menú hamburguesa para móviles -->
+                <button class="navbar-toggler" type="button" style="filter: invert(1);" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenedor colapsable -->
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="d-flex justify-content-lg-end flex-column flex-lg-row w-100 ">
+                        <!-- Botón Create Post alineado a la izquierda -->
+                        <ul class="navbar-nav ">
+                            <li class="nav-item ">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Create New Post
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Icono de engranaje alineado a la derecha -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-gear text-white"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <menu class="container-fluid mt-0 mb-0"  style="background: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);">
+        <div class="contaniner row  ">
+            <div class="d-flex justify-content-center gap-3 mb-3 mt-3 ">
+                <a href="index.html"><i class="fa-regular fa-square  text-white"></i></a>
+                <a href="indexGrid.html"><i class="fa-solid fa-table-cells text-white"></i></a>
+            </div>
+
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Architecture</h5><small>01/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450"
+                            src="img/architecture.jpg" alt="Architecture">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">Ancient architecture.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Church</h5><small>02/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/church.jpg"
+                            alt="Church">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">90 Likes</p>
+                    </div>
+                    <p class="mb-0">Ancient Church</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">SMART DOG</h5><small>03/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/dog.jpg"
+                            alt="DOG">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">304 Likes</p>
+                    </div>
+                    <p class="mb-0">This dog programs better than me</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Fashion</h5><small>04/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover  border rounded w-100  h-100  mx-auto mb-2" src="img/fashion.jpg"
+                            alt="fashion">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">304 Likes</p>
+                    </div>
+                    <p class="mb-0">Summer Fashion.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Geek</h5><small>05/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/geek.jpg"
+                            alt="geek">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">Geek Foreever.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Turkey</h5><small>06/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/turkey.jpg"
+                            alt="Turkey">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">An imposing blue bird.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Train</h5><small>07/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/train.jpg"
+                            alt="Train">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">A train crossing the city.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Pedaling</h5><small>08/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/pedaling.jpg"
+                            alt="pedaling">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">Road cycling.</p>
+                </div>
+            </article>
+            <article class="col-lg-4 col-md-6 col-12 mb-3 ">
+                <div class="border rounded p-2 text-white min-vh-50">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <h5 class="mb-0">Studying</h5><small>09/10 <i class="fa-solid fa-eye"></i></small>
+                    </div>
+                    <div class="container ratio ratio-4x3 mb-2 ">
+                        <img class="object-fit-cover border rounded w-100  h-100  mx-auto mb-2" loading="lazy" width="400" height="250" width="600" height="450" src="img/studying.jpg"
+                            alt="studying">
+                    </div>
+                    <div class="d-flex align-items-center mb-1"><i class="fa-solid fa-heart me-2 text-danger"></i>
+                        <p class="mb-0">204 Likes</p>
+                    </div>
+                    <p class="mb-0">Night reading.</p>
+                </div>
+            </article>
 
 
 
+    </menu>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2">
+                <header class="modal-header ps-0">
+                    <h4 class="modal-title ">Create a New Post</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </header>
 
+                <section class="body-modal  ">
+                    <p><strong>Caption:</strong> </p>
+                    <section class="form-floating ">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Add the caption of your post here</label>
+                    </section>
+                    <div class="icons d-flex my-2 ">
+                        <div class="p-2  ">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <div class="p-2 ">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                </footer>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-    
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
